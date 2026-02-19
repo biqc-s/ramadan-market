@@ -9,17 +9,27 @@ import cloudinary.uploader
 import qrcode
 from io import BytesIO
 
+from dotenv import load_dotenv
+
+# تحميل متغيرات البيئة من ملف .env (للاستخدام المحلي)
+load_dotenv()
+
 # الإعدادات (Configuration)
-TOKEN = "8158433190:AAGdPs26bOZ1dvhkG4cq27xs6oOp0iW7ZYk" 
+# نقرأ القيم من متغيرات البيئة بدلاً من كتابتها مباشرة في الكود
+TOKEN = os.getenv("TELEGRAM_TOKEN")
 DATA_FILE = "data.json" # اسم ملف تخزين البيانات
 ADMIN_IDS = [8158433190] # معرف مدير البوت
-BASE_URL = "https://your-username.github.io/ramadan-market" # رابط الموقع (يجب تحديثه)
+BASE_URL = "https://your-username.github.io/ramadan-market" # رابط الموقع
 
 # --- إعدادات Cloudinary (لرفع الصور) ---
-# استبدل هذه القيم ببيانات حسابك من Cloudinary
-CLOUDINARY_CLOUD_NAME = "duyt3dzdz"
-CLOUDINARY_API_KEY = "647178117181471"
-CLOUDINARY_API_SECRET = "cSkbTEQocZBBtlTawfApbAgi7To"
+CLOUDINARY_CLOUD_NAME = os.getenv("CLOUDINARY_CLOUD_NAME")
+CLOUDINARY_API_KEY = os.getenv("CLOUDINARY_API_KEY")
+CLOUDINARY_API_SECRET = os.getenv("CLOUDINARY_API_SECRET")
+
+# التحقق من وجود المتغيرات الهامة
+if not TOKEN or not CLOUDINARY_CLOUD_NAME:
+    logging.critical("❌ خطأ: لم يتم العثور على التوكن أو بيانات Cloudinary. تأكد من إعداد متغيرات البيئة.")
+    exit(1)
 
 cloudinary.config(
   cloud_name = CLOUDINARY_CLOUD_NAME,
