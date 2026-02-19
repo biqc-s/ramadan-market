@@ -38,8 +38,13 @@ cloudinary_config = {
 }
 
 # إعداد البروكسي الخاص بـ PythonAnywhere (للخطة المجانية)
-if "PYTHONANYWHERE_DOMAIN" in os.environ:
-    cloudinary_config["api_proxy"] = "http://proxy.server:3128"
+# نتحقق من وجود المتغير أو اسم المستخدم في المسار
+if "PYTHONANYWHERE_DOMAIN" in os.environ or "pythonanywhere" in os.getcwd():
+    proxy = "http://proxy.server:3128"
+    os.environ["http_proxy"] = proxy
+    os.environ["https_proxy"] = proxy
+    cloudinary_config["api_proxy"] = proxy
+    print(f"🌍 Detected PythonAnywhere: Using proxy {proxy}")
 
 cloudinary.config(**cloudinary_config)
 
