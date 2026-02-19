@@ -19,7 +19,7 @@ load_dotenv()
 TOKEN = os.getenv("TELEGRAM_TOKEN")
 DATA_FILE = "data.json" # اسم ملف تخزين البيانات
 ADMIN_IDS = [8158433190] # معرف مدير البوت
-BASE_URL = "https://your-username.github.io/ramadan-market" # رابط الموقع
+BASE_URL = "https://rijal.marct.i3j.io" # رابط الموقع
 
 # --- إعدادات Cloudinary (لرفع الصور) ---
 CLOUDINARY_CLOUD_NAME = os.getenv("CLOUDINARY_CLOUD_NAME")

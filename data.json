@@ -1,0 +1,164 @@
+{
+  "shops": {
+    "shop1": {
+      "name": "مطبخ أم خالد",
+      "tagline": "أشهى المأكولات الرمضانية المنزلية",
+      "phone": "966500000000",
+      "categories": [
+        "أطباق رئيسية",
+        "مقبلات",
+        "حلويات",
+        "مشروبات",
+        "حللللل"
+      ],
+      "products": [
+        {
+          "id": "p1",
+          "name": "سمبوسة لحم (درزن)",
+          "description": "سمبوسة مقرمشة بحشوة اللحم الطازج والخضار",
+          "price": 25,
+          "image": "",
+          "category": "مقبلات"
+        },
+        {
+          "id": "p2",
+          "name": "برياني دجاج",
+          "description": "أرز برياني فاخر مع الدجاج والمكسرات",
+          "price": 35,
+          "image": "",
+          "category": "أطباق رئيسية"
+        },
+        {
+          "id": "p3",
+          "name": "لقيمات (صحن)",
+          "description": "لقيمات ذهبية مقرمشة مع الدبس",
+          "price": 15,
+          "image": "",
+          "category": "حلويات"
+        },
+        {
+          "id": "p4",
+          "name": "فيمتو بارد",
+          "description": "مشروب رمضان المفضل",
+          "price": 5,
+          "image": "",
+          "category": "مشروبات"
+        },
+        {
+          "id": "p5",
+          "name": "فطييير",
+          "description": "تمت إضافته عبر البوت",
+          "price": 45.0,
+          "image": "",
+          "category": "حللللل"
+        }
+      ]
+    },
+    "shop2": {
+      "name": "تمر وقهوة",
+      "tagline": "أجود أنواع التمور والقهوة العربية",
+      "phone": "966511111111",
+      "categories": [
+        "تمور",
+        "قهوة"
+      ],
+      "products": [
+        {
+          "id": "d1",
+          "name": "سخري فاخر (كيلو)",
+          "description": "تمر سكري ملكي حبة كبيرة",
+          "price": 45,
+          "image": "",
+          "category": "تمور"
+        },
+        {
+          "id": "c1",
+          "name": "قهوة عربية (دلة)",
+          "description": "قهوة جنوبية بالهيل والزعفران",
+          "price": 20,
+          "image": "",
+          "category": "قهوة"
+        }
+      ]
+    },
+    "بلببببببب": {
+      "name": "تناللاتنلاىتن",
+      "tagline": "تعنلتانللاتن",
+      "phone": "نتانت",
+      "categories": [
+        "بليبليبل",
+        "يبرالا",
+        "تالليات",
+        "dgfhbhf",
+        ",kjnhmmnb"
+      ],
+      "products": [
+        {
+          "id": "e6ebe37b",
+          "name": "سيبلايسبايبا",
+          "description": "...",
+          "price": 555.0,
+          "image": "",
+          "category": "بليبليبل"
+        },
+        {
+          "id": "b69810c4",
+          "name": "تقفغتفغىعتافثاىلاىثفقى",
+          "description": "...",
+          "price": 555.0,
+          "image": "",
+          "category": "يبرالا"
+        },
+        {
+          "id": "eebf361a",
+          "name": "لاابيبل",
+          "description": "...",
+          "price": 555.0,
+          "image": "images/05dcd2af0e44405184c71047ca2eb3b9.jpg",
+          "category": "تالليات"
+        },
+        {
+          "id": "ecdd32fb",
+          "name": "shfgbhg",
+          "description": "...",
+          "price": 52744.0,
+          "image": "",
+          "category": "dgfhbhf"
+        },
+        {
+          "id": "9a84a781",
+          "name": "rytjntyjgfghgffgdhj",
+          "description": "...",
+          "price": 544.0,
+          "image": "https://res.cloudinary.com/duyt3dzdz/image/upload/v1771461923/engxzl3jhb1eyirluapb.jpg",
+          "category": ",kjnhmmnb"
+        }
+      ]
+    },
+    "مممممممممممممممممممم": {
+      "name": "ممممممممممممم",
+      "tagline": "تهحىتنخحةىنمةنخمةخنحمةنخ",
+      "phone": "55555555",
+      "categories": [],
+      "products": []
+    },
+    "سعيد": {
+      "name": "سعيدد",
+      "tagline": "تبنبن",
+      "phone": "666",
+      "categories": [
+        "حلويات"
+      ],
+      "products": [
+        {
+          "id": "49c256a7",
+          "name": "اختبار",
+          "description": "...",
+          "price": 666.0,
+          "image": "https://res.cloudinary.com/duyt3dzdz/image/upload/v1771463883/cgzjidyfqk2gqwl8sxi8.jpg",
+          "category": "حلويات"
+        }
+      ]
+    }
+  }
+}
