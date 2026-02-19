@@ -31,11 +31,17 @@ if not TOKEN or not CLOUDINARY_CLOUD_NAME:
     logging.critical("❌ خطأ: لم يتم العثور على التوكن أو بيانات Cloudinary. تأكد من إعداد متغيرات البيئة.")
     exit(1)
 
-cloudinary.config(
-  cloud_name = CLOUDINARY_CLOUD_NAME,
-  api_key = CLOUDINARY_API_KEY,
-  api_secret = CLOUDINARY_API_SECRET
-)
+cloudinary_config = {
+  "cloud_name": CLOUDINARY_CLOUD_NAME,
+  "api_key": CLOUDINARY_API_KEY,
+  "api_secret": CLOUDINARY_API_SECRET
+}
+
+# إعداد البروكسي الخاص بـ PythonAnywhere (للخطة المجانية)
+if "PYTHONANYWHERE_DOMAIN" in os.environ:
+    cloudinary_config["api_proxy"] = "http://proxy.server:3128"
+
+cloudinary.config(**cloudinary_config)
 
 # إعداد نظام تسجيل الأحداث (Logging)
 logging.basicConfig(
